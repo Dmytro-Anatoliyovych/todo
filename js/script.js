@@ -21,7 +21,10 @@ function addTaskHandler ()
 {
     if (taskNameInput.value)
     {
-        if (!startMessage.hidden) startMessage.hidden = true;
+        if (!startMessage.hidden) 
+        {
+            startMessage.hidden = true;
+        }
 
         let newTask = new Task(taskNameInput.value);
         newTask.createIn(taskList);
